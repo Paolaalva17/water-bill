@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+
+int overdue = 2;
+
+float fullbill = 0;
+
+double unpaidbill;
+
+cout<<"User, please input unpaid bill amount\n";
+
+cin>>unpaidbill;
+
+if (unpaidbill>0)
+
+{fullbill = fullbill + overdue;}
+
+double wateruse;
+
+cout<<"User please input water use\n";
+
+cin>>wateruse;
+
+double stancharge = 35;
+
+float consumecharge = 1.10;
+
+fullbill = fullbill + wateruse + stancharge + (consumecharge * wateruse);
+
+cout<<"Water Bill: $"<<fullbill<<endl;
+
+return 0;
+}
